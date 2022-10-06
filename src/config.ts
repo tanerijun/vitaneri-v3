@@ -1,18 +1,18 @@
 import type { SocialsObject } from "./types";
 
 export const SITE = {
-  website: "https://astro-paper.pages.dev/",
-  author: "Sat Naing",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "AstroPaper",
-  ogImage: "default-og.png",
+  website: "https://vitaneri.com/",
+  author: "Vincent Taneri",
+  desc: "Personal website by Vincent Taneri",
+  title: "Vitaneri",
+  ogImage: "vitaneri-og.png",
   lightAndDarkMode: true,
-  postPerPage: 3,
+  postPerPage: 10,
 };
 
 export const LOGO_IMAGE = {
   enable: false,
-  svg: true,
+  svg: false,
   width: 216,
   height: 46,
 };
@@ -20,32 +20,32 @@ export const LOGO_IMAGE = {
 export const SOCIALS: SocialsObject = [
   {
     name: "Github",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/tanerijun",
     active: true,
   },
   {
-    name: "Facebook",
-    href: "https://github.com/satnaing/astro-paper",
-    active: true,
-  },
-  {
-    name: "Instagram",
-    href: "https://github.com/satnaing/astro-paper",
+    name: "Twitter",
+    href: "https://github.com/tanerivince",
     active: true,
   },
   {
     name: "Linkedin",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://github.com/vincent-taneri",
     active: true,
   },
   {
     name: "Mail",
-    href: "mailto:yourmail@gmail.com",
+    href: "mailto:tanerivince@gmail.com",
+    active: true,
+  },
+  {
+    name: "Facebook",
+    href: "https://github.com/VinceTaneri",
     active: false,
   },
   {
-    name: "Twitter",
-    href: "https://github.com/satnaing/astro-paper",
+    name: "Instagram",
+    href: "https://github.com/vincenttaneri",
     active: false,
   },
   {
