@@ -2,7 +2,9 @@
 
 TODO:
 
-Shiki Theme
 Content
 Script to generate archetype
 Utterance
+
+Post idea:
+How I integrate Utterance with Astro

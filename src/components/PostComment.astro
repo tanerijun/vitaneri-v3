@@ -1,0 +1,20 @@
+<div id="utterances"></div>
+
+<script>
+  const script = document.createElement("script");
+  const utterances = document.querySelector("#utterances");
+
+  // Set configurations
+  Object.entries({
+    src: "https://utteranc.es/client.js",
+    repo: "tanerijun/vitaneri-v3",
+    "issue-term": "pathname",
+    label: "post comments",
+    theme: "photon-dark",
+    crossorigin: "anonymous",
+  }).forEach(([key, value]) => {
+    script.setAttribute(key, value);
+  });
+
+  utterances?.parentNode?.insertBefore(script, utterances);
+</script>
