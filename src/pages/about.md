@@ -3,34 +3,32 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme. I designed and crafted this based on [my personal blog](https://satnaing.dev/blog).
-
-This theme is aimed to be accessible out of the box. Light and dark mode are supported by
-default and additional color schemes can also be configured.
-
-This theme is self-documented \_ which means articles/posts in this theme can also be considered as documentations. So, see the documentation for more info.
-
 <div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
+  <img src="/assets/portrait.jpg" class="w-60 mx-auto rounded-full" alt="A picture of Vincent Taneri">
 </div>
 
-## Tech Stack
+Hi, my name is Vincent. I'm currently a student at LongHua University of Science and Technology, Taiwan, pursuing a B.E in Electronic Engineering.
 
-This theme is written in vanilla JavaScript (+ TypeScript for type checking) and a little bit of ReactJS for some interactions. TailwindCSS is used for styling; and Markdown is used for blog contents.
+From a very young age, I've always been interested in Tech and Science. Initially, I started coding out of curiosity, eventually it became a hobby, and after many hobby projects, I finally decided to pursue a career in software development.
 
-## Features
+I have a passion for design and development, I like to create things that don't just look good, but also functional and performant. I am always eager to take on a challenge, and aim to excel in all the tasks I take on.
 
-Here are certain features of this site.
+## My Skills
 
-- fully responsive and accessible
-- SEO-friendly
-- light & dark mode
-- fuzzy search
-- super fast performance
-- draft posts
-- pagination
-- sitemap & rss feed
-- highly customizable
+| Domain                      | Skills                                                                                                     |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| **_Languages_**             | English, Chinese, Indonesian (All fluent)                                                                  |
+| **_Programming Languages_** | JavaScript, TypeScript, Java, Python                                                                       |
+| **_Frontend_**              | HTML, CSS, Tailwind CSS, Styled Component, Chakra UI, Material UI, JQuery, React (and friends), Astro, ... |
+| **_Backend_**               | NodeJS, Express, Spring / Spring Boot, MongoDB, MySQL, PostgreSQL, Firebase, REST, GraphQL, ...            |
 
-If you like this theme, you can star/contribute to the [repo](https://github.com/satnaing/astro-paper).  
-Or you can even give any feedback via my [email](mailto:contact@satnaing.dev).
+## Hobbies
+
+Life couldn't be all about working or learning. Like everyone else, I've my hobbies that give me fuel and necessary re-charge to keep me motivated. Here are some activites that I enjoy doing:
+
+- Tinkering gadgets
+- Reading (Non-fiction, Fiction, Manga)
+- Waching movies (Mostly Anime)
+- Playing video games
+- Cycling, running, weight-lifting
+- Hunting for great stories (I really love those movies or books with life-changing story)
