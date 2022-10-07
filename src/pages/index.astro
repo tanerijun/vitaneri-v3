@@ -20,7 +20,7 @@ const sortedPosts = getSortedPosts(posts);
   <Header />
   <main id="main-content">
     <section id="hero">
-      <h1>Mingalaba</h1>
+      <h1>Vitaneri</h1>
       <a
         target="_blank"
         href="/rss.xml"
@@ -38,14 +38,11 @@ const sortedPosts = getSortedPosts(posts);
       </a>
 
       <p>
-        AstroPaper is a minimal, responsive and SEO-friendly Astro blog theme.
-        This theme is aimed to be accessible out of the box. Light and dark mode
-        are supported by default and additional color schemes can also be
-        configured. Read posts or see the <LinkButton
+        Welcome to my personal blog, Vitaneri. This is the place where I
+        document my discoveries in the Tech world. You can learn more about me <LinkButton
           className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
-          href="https://github.com/satnaing/astro-paper#readme"
-          >documentation</LinkButton
-        > for more info.
+          href="/about">here</LinkButton
+        > and contact me through the links below.
       </p>
       <div class="social-wrapper">
         <div class="whitespace-nowrap">Social Links:</div>
@@ -93,7 +90,7 @@ const sortedPosts = getSortedPosts(posts);
         {
           sortedPosts.map(
             ({ frontmatter }, index) =>
-              index < 4 && (
+              index < 5 && (
                 <Card
                   href={`/posts/${slugify(frontmatter)}`}
                   post={frontmatter}

@@ -25,12 +25,12 @@ export const SOCIALS: SocialsObject = [
   },
   {
     name: "Twitter",
-    href: "https://github.com/tanerivince",
+    href: "https://twitter.com/tanerivince",
     active: true,
   },
   {
     name: "Linkedin",
-    href: "https://github.com/vincent-taneri",
+    href: "https://www.linkedin.com/in/vincent-taneri/",
     active: true,
   },
   {
