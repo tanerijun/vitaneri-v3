@@ -112,7 +112,7 @@ Your `Utterances.astro` should now look something like this:
 
 With that, we're finished with the component. You can plug it wherever you want your Utterances comment to show up.
 
-## Changing The theme
+## Changing Utterances Theme Based On Site Theme
 
 Now let's take this a step further by having the Utterances theme match the site theme. This part really depends on how the theming system on your site works. A common approach is to persist theming information in local storage. I'm going to use that as an example here.
 
@@ -145,7 +145,7 @@ Nice our Utterances theme change dynamically now. But it's still not perfect.
 
 Usually, a site that support both light mode and dark mode will have a button to toggle between the modes. With our current implementation, the theme only change when our component mounts. In other words, even if we click on the button to toggle site theme change, we have to refresh the page before Utterance know about the change.
 
-## A Function To Change Utterance Theme
+## Synchronizing Utterances Theme With Site Theme
 
 In order to make sure the Utterance theme is synced with the `theme` value in our local storage, we are going to create a function to trigger theme change manually and bind it to our light/dark mode toggle button.
 
