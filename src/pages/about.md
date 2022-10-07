@@ -15,6 +15,9 @@ I have a passion for design and development, I like to create things that don't 
 
 ## My Skills
 
+The tech field is always evolving, new techs come out all the time. I strive to keep myself up to date, having at least a high level understanding of the techs.
+These are the skills and techs I'm most confident with:
+
 | Domain                      | Skills                                                                                                     |
 | --------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | **_Languages_**             | English, Chinese, Indonesian (All fluent)                                                                  |
