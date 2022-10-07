@@ -1,8 +1,8 @@
-<div id="utterances"></div>
+<div id="utterances-container"></div>
 
 <script>
   const script = document.createElement("script");
-  const utterances = document.querySelector("#utterances");
+  const container = document.querySelector("#utterances-container");
   const currentTheme = localStorage.getItem("theme");
 
   // Set configurations
@@ -17,5 +17,5 @@
     script.setAttribute(key, value);
   });
 
-  utterances?.parentNode?.insertBefore(script, utterances);
+  container?.appendChild(script);
 </script>
