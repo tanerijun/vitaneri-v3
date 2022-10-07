@@ -4,7 +4,7 @@ TODO:
 
 Content
 Script to generate archetype
-Utterance
+Giscus (Utterances alternative)
 
 Post idea:
-How I integrate Utterance with Astro
+From Utterances To Giscus
