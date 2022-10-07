@@ -3,6 +3,7 @@
 <script>
   const script = document.createElement("script");
   const utterances = document.querySelector("#utterances");
+  const currentTheme = localStorage.getItem("theme");
 
   // Set configurations
   Object.entries({
@@ -10,7 +11,7 @@
     repo: "tanerijun/vitaneri-v3",
     "issue-term": "pathname",
     label: "post comments",
-    theme: "photon-dark",
+    theme: currentTheme == "light" ? "github-light" : "photon-dark",
     crossorigin: "anonymous",
   }).forEach(([key, value]) => {
     script.setAttribute(key, value);
