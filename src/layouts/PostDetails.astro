@@ -46,8 +46,8 @@ const { title, author, description, ogImage, datetime, tags } = frontmatter;
     <ul class="tags-container">
       {tags.map((tag) => <Tag name={tag} />)}
     </ul>
+    <PostComment />
   </main>
-  <PostComment />
   <Footer />
 </Layout>
 
