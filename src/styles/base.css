@@ -3,22 +3,81 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
+
+  /* Light theme settings */
+
+  /* AstroPaper */
+  /* :root {
     --color-fill: 251, 254, 251;
     --color-text-base: 40, 39, 40;
     --color-accent: 0, 108, 172;
     --color-card: 230, 230, 230;
     --color-card-muted: 205, 205, 205;
     --color-border: 236, 233, 233;
+  } */
+
+  /* Lobster */
+  /* :root {
+    --color-fill: 246, 238, 225;
+    --color-text-base: 1, 44, 86;
+    --color-accent: 225, 74, 57;
+    --color-card: 217, 209, 195;
+    --color-card-muted: 239, 216, 176;
+    --color-border: 220, 152, 145;
+  } */
+
+  /* Leaf Blue */
+  /* :root {
+    --color-fill: 242, 245, 236;
+    --color-text-base: 53, 53, 56;
+    --color-accent: 17, 88, 209;
+    --color-card: 206, 213, 180;
+    --color-card-muted: 187, 199, 137;
+    --color-border: 124, 173, 255;
+  } */
+
+  /* Pinky Light */
+  :root {
+    --color-fill: 250, 252, 252;
+    --color-text-base: 34, 46, 54;
+    --color-accent: 211, 0, 106;
+    --color-card: 234, 206, 219;
+    --color-card-muted: 241, 186, 212;
+    --color-border: 227, 169, 198;
   }
-  .theme-dark {
+
+  /* Dark theme settings */
+
+  /* AstroPaper Dark */
+  /* .theme-dark {
     --color-fill: 47, 55, 65;
     --color-text-base: 230, 230, 230;
     --color-accent: 26, 217, 217;
     --color-card: 63, 75, 90;
     --color-card-muted: 89, 107, 129;
     --color-border: 59, 70, 85;
+  } */
+
+  /* Deep Oyster */
+  /* .theme-dark {
+    --color-fill: 33, 35, 61;
+    --color-text-base: 244, 247, 245;
+    --color-accent: 255, 82, 86;
+    --color-card: 57, 60, 102;
+    --color-card-muted: 74, 78, 134;
+    --color-border: 177, 47, 50;
+  } */
+
+  /* Pink Dark */
+  .theme-dark {
+    --color-fill: 53, 54, 64;
+    --color-text-base: 233, 237, 241;
+    --color-accent: 255, 120, 200;
+    --color-card: 75, 76, 89;
+    --color-card-muted: 113, 85, 102;
+    --color-border: 134, 67, 107;
   }
+  
   #sun-svg,
   .theme-dark #moon-svg {
     display: none;
