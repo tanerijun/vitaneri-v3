@@ -3,3 +3,5 @@ Disallow: /nogooglebot/
 
 User-agent: *
 Allow: /
+
+Sitemap: https://vitaneri.com/sitemap_index.xml
