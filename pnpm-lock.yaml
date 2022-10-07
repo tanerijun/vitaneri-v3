@@ -13,6 +13,7 @@ specifiers:
   react: ^18.2.0
   react-dom: ^18.2.0
   remark-collapse: ^0.1.2
+  remark-gemoji: ^7.0.1
   remark-toc: ^8.0.1
   tailwindcss: ^3.1.8
 
@@ -23,6 +24,7 @@ dependencies:
   fuse.js: 6.6.2
   github-slugger: 1.4.0
   remark-collapse: 0.1.2
+  remark-gemoji: 7.0.1
   remark-toc: 8.0.1
   tailwindcss: 3.1.8_postcss@8.4.17
 
@@ -1749,6 +1751,10 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
+  /gemoji/7.1.0:
+    resolution: {integrity: sha512-wI0YWDIfQraQMDs0yXAVQiVBZeMm/rIYssf8LZlMDdssKF19YqJKOHkv4zvwtVQTBJ0LNmErv1S+DqlVUudz8g==}
+    dev: false
+
   /gensync/1.0.0-beta.2:
     resolution: {integrity: sha512-3hN7NaskYvMDLQY55gnW3NQ+mesEAepTqlg+VEbj7zzqEMBVNhzcGYYeqFo/TlYz6eQiFcp1HcsCZO+nGgS8zg==}
     engines: {node: '>=6.9.0'}
@@ -3128,6 +3134,15 @@ packages:
     dependencies:
       mdast-util-heading-range: 2.1.5
       mdast-util-to-string: 1.1.0
+    dev: false
+
+  /remark-gemoji/7.0.1:
+    resolution: {integrity: sha512-vhjuntkvYxRgM4Um6L5N7B3SrNu3eX6jNqpqAywpAvSYPbmDPNL3I5E6zWm+KPCyh3OpKRc5OPnz7SifggzePw==}
+    dependencies:
+      '@types/mdast': 3.0.10
+      gemoji: 7.1.0
+      unified: 10.1.2
+      unist-util-visit: 4.1.1
     dev: false
 
   /remark-gfm/3.0.1:

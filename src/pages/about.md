@@ -31,4 +31,4 @@ Life couldn't be all about working or learning. Like everyone else, I've my hobb
 - Waching movies (Mostly Anime)
 - Playing video games
 - Cycling, running, weight-lifting
-- Hunting for great stories (I really love those movies or books with life-changing story)
+- Hunting for great stories (I really love those movies or books with life-changing story :relaxed:)
