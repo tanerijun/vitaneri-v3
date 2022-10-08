@@ -3,7 +3,6 @@
 TODO:
 
 Content
-Script to generate archetype
 Giscus (Utterances alternative)
 
 Post idea:
