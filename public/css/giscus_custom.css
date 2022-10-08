@@ -1,8 +1,3 @@
-/*! MIT License
- * Copyright (c) 2018 GitHub Inc.
- * https://github.com/primer/primitives/blob/main/LICENSE
- */
-
 main {
   --color-prettylights-syntax-comment: #768390;
   --color-prettylights-syntax-constant: #6cb6ff;
@@ -40,7 +35,7 @@ main {
   --color-btn-shadow: 0 0 transparent;
   --color-btn-inset-shadow: 0 0 transparent;
   --color-btn-hover-bg: transparent;
-  --color-btn-hover-border: #768390;
+  --color-btn-hover-border: #85436A;
   --color-btn-active-bg: transparent;
   --color-btn-active-border: #636e7b;
   --color-btn-selected-bg: transparent;
@@ -59,15 +54,15 @@ main {
   --color-fg-default: #adbac7;
   --color-fg-muted: #768390;
   --color-fg-subtle: #636e7b;
-  --color-canvas-default: transparent;
-  --color-canvas-overlay: transparent;
-  --color-canvas-inset: transparent;
-  --color-canvas-subtle: transparent;
-  --color-border-default: #85436A;
-  --color-border-muted: #85436A;
+  --color-canvas-default: #191724;
+  --color-canvas-overlay: #191724;
+  --color-canvas-inset: #191724;
+  --color-canvas-subtle: #191724;
+  --color-border-default: #191724;
+  --color-border-muted: #191724;
   --color-neutral-muted: rgb(99 110 123 / 40%);
   --color-accent-fg: #adbac7;
-  --color-accent-emphasis: #85436A;
+  --color-accent-emphasis: #191724;
   --color-accent-muted: transparent;
   --color-accent-subtle: transparent;
   --color-success-fg: #57ab5a;
@@ -77,13 +72,10 @@ main {
   --color-danger-subtle: rgb(229 83 75 / 15%);
   --color-primer-shadow-inset: 0 0 transparent;
   --color-primer-shadow-focus: 0 0 0 1px #85436A;
-  --color-scale-gray-7: #373e47;
-  --color-scale-blue-8: #373e47;
-
-  /*! Extensions from @primer/css/alerts/flash.scss */
+  --color-scale-gray-7: transparent;
+  --color-scale-blue-8: #191724;
   --color-social-reaction-bg-hover: var(--color-scale-gray-7);
   --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
-
   color-scheme: dark;
 }
 
@@ -94,10 +86,3 @@ main .pagination-loader-container {
 main .gsc-loading-image {
   background-image: url("https://github.githubassets.com/images/mona-loading-dimmed.gif");
 }
-
-/* main {
-  --color-border-default: #85436A;
-  --color-canvas-default: transparent;
-  --color-canvas-inset: transparent;
-  --color-canvas-subtle: transparent;
-} */
