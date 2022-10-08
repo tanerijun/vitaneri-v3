@@ -31,14 +31,14 @@ main {
   --color-prettylights-syntax-constant-other-reference-link: #96d0ff;
   --color-btn-text: #adbac7;
   --color-btn-bg: transparent;
-  --color-btn-border: rgb(205 217 229 / 10%);
+  --color-btn-border: #191724;
   --color-btn-shadow: 0 0 transparent;
   --color-btn-inset-shadow: 0 0 transparent;
   --color-btn-hover-bg: transparent;
-  --color-btn-hover-border: #85436A;
+  --color-btn-hover-border: #19172480;
   --color-btn-active-bg: transparent;
   --color-btn-active-border: #636e7b;
-  --color-btn-selected-bg: transparent;
+  --color-btn-selected-bg: #191724;
   --color-btn-primary-text: #fff;
   --color-btn-primary-bg: #347d39;
   --color-btn-primary-border: rgb(205 217 229 / 10%);
