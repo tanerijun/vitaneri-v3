@@ -8,7 +8,9 @@ import Tag from "@components/Tag.astro";
 import getUniqueTags from "@utils/getUniqueTags";
 import type { Frontmatter } from "src/types";
 
-const posts = await Astro.glob<Frontmatter>("../../contents/posts/**/index.md");
+const posts = await Astro.glob<Frontmatter>(
+  "../../contents/posts/**/index.mdx"
+);
 
 let tags = getUniqueTags(posts);
 ---

@@ -6,33 +6,24 @@ import remarkCollapse from "remark-collapse";
 import remarkGemoji from "remark-gemoji";
 import sitemap from "@astrojs/sitemap";
 
+import mdx from "@astrojs/mdx";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://vitaneri.com/",
-  integrations: [
-    tailwind({
-      config: {
-        applyBaseStyles: false,
-      },
-    }),
-    react(),
-    sitemap(),
-  ],
+  integrations: [tailwind({
+    config: {
+      applyBaseStyles: false
+    }
+  }), react(), sitemap(), mdx()],
   markdown: {
-    remarkPlugins: [
-      remarkGemoji,
-      remarkToc,
-      [
-        remarkCollapse,
-        {
-          test: "Table Of Contents",
-        },
-      ],
-    ],
+    remarkPlugins: [remarkGemoji, remarkToc, [remarkCollapse, {
+      test: "Table Of Contents"
+    }]],
     shikiConfig: {
       theme: "rose-pine",
-      wrap: false,
+      wrap: false
     },
-    extendDefaultPlugins: true,
-  },
+    extendDefaultPlugins: true
+  }
 });

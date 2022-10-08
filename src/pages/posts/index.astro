@@ -5,7 +5,9 @@ import getSortedPosts from "@utils/getSortedPosts";
 import getPageNumbers from "@utils/getPageNumbers";
 import type { Frontmatter } from "src/types";
 
-const posts = await Astro.glob<Frontmatter>("../../contents/posts/**/index.md");
+const posts = await Astro.glob<Frontmatter>(
+  "../../contents/posts/**/index.mdx"
+);
 
 const sortedPosts = getSortedPosts(posts);
 

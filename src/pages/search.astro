@@ -8,7 +8,7 @@ import Search from "@components/Search";
 import type { Frontmatter } from "src/types";
 
 // Retrieve all articles
-const posts = await Astro.glob<Frontmatter>("../contents/posts/**/index.md");
+const posts = await Astro.glob<Frontmatter>("../contents/posts/**/index.mdx");
 
 // List of items to search in
 const searchList = posts
