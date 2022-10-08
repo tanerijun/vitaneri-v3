@@ -1,17 +1,24 @@
-<div id="utterances-container"></div>
+<div id="comments-container"></div>
 
 <script>
   const script = document.createElement("script");
-  const container = document.querySelector("#utterances-container");
+  const container = document.querySelector("#comments-container");
   const currentTheme = localStorage.getItem("theme");
 
-  // Set configurations
   Object.entries({
-    src: "https://utteranc.es/client.js",
-    repo: "tanerijun/vitaneri-v3",
-    "issue-term": "pathname",
-    label: "post comments",
-    theme: currentTheme == "light" ? "github-light" : "github-dark",
+    src: "https://giscus.app/client.js",
+    "data-repo": "tanerijun/vitaneri-v3",
+    "data-repo-id": "R_kgDOIJI8HQ",
+    "data-category": "General",
+    "data-category-id": "DIC_kwDOIJI8Hc4CR3FU",
+    "data-mapping": "title",
+    "data-strict": "1",
+    "data-reactions-enabled": "1",
+    "data-emit-metadata": "0",
+    "data-input-position": "top",
+    "data-theme": currentTheme === "light" ? "light" : "dark_dimmed",
+    "data-lang": "en",
+    "data-loading": "lazy",
     crossorigin: "anonymous",
   }).forEach(([key, value]) => {
     script.setAttribute(key, value);

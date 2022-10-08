@@ -2,7 +2,6 @@
 
 TODO:
 
-Content
 Giscus (Utterances alternative)
 
 Post idea:

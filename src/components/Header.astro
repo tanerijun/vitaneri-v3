@@ -165,7 +165,7 @@ const { activeNav } = Astro.props;
 </style>
 
 <script>
-  import { toggleUtterancesTheme } from "@utils/toggleUtterancesTheme";
+  import { toggleGiscusTheme } from "@utils/toggleGiscusTheme";
 
   // Toggle Theme
   const themeBtn = document.querySelector("#theme-btn");
@@ -178,7 +178,7 @@ const { activeNav } = Astro.props;
       localStorage.setItem("theme", "dark");
       htmlClassList?.add("theme-dark");
     }
-    toggleUtterancesTheme();
+    toggleGiscusTheme();
   });
 
   // Toggle menu
