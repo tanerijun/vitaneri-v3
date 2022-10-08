@@ -13,18 +13,18 @@ To install locally, you can:
 1. Fork and clone the repo
 2. Install dependencies
    ```
-   pnpm i
+   npm install
    ```
 3. Run locally
    ```
-   pnpm dev
+   npm run dev
    ```
 
 ## Create Blog Post
 
 1. To create a blog post with the necessary frontmatters
    ```
-   pnpm post [POST TITLE]
+   npm run post [POST TITLE]
    ```
    Make sure to wrap the post title with `""` (double quotes).
 2. An `index.mdx` file in the sluggified folder with your post title will be created at `src/contents/posts`.
