@@ -35,3 +35,9 @@ Life couldn't be all about working or learning. Like everyone else, I've my hobb
 - Playing video games
 - Cycling, running, weight-lifting
 - Hunting for great stories (I really love those movies or books with life-changing story :relaxed:)
+
+## About Vitaneri
+
+I started Vitaneri as a personal blog in 2022, documenting stuff I learned in the tech world. Eventually, I decided to completely turn it into my personal site. So, Vitaneri is now a [blog](/posts/) focused on web development along with a porfolio of my [side projects](/projects/).
+
+There is no ads or any sponsored content on Vitaneri. There is also no Google Analytics or any form of data collection because I respect your privacy :wink:.
