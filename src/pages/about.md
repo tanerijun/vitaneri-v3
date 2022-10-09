@@ -42,4 +42,4 @@ I started Vitaneri as a personal blog in 2022, documenting stuff I learned in th
 
 So, Vitaneri is now a [blog](/posts/) focused on documenting my knowledge and a porfolio of my [side projects](/projects/).
 
-There is no external ads and sponsored contents on Vitaneri. There is also no Google Analytics or any form of data collection. I respect your privacy :wink:.
+There is no external ads or sponsored content on Vitaneri. There is also no Google Analytics or any form of data collection. I respect your privacy :wink:.
