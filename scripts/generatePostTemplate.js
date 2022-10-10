@@ -8,13 +8,13 @@ const postSlug = slugger(postTitle);
 const frontmatter = {
   author: "Vincent Taneri",
   datetime: new Date().toISOString(),
-  title: postTitle,
+  title: `"${postTitle}"`,
   slug: postSlug,
   featured: "false",
   draft: "false",
-  tags: "",
+  tags: "\n\t-",
   ogImage: "",
-  description: "",
+  description: `"Post description ..."`,
 };
 
 console.log("Generating a new post template ...");
