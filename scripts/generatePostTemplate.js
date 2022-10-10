@@ -14,7 +14,7 @@ const frontmatter = {
   draft: "false",
   tags: "\n\t-",
   ogImage: "",
-  description: `"Post description ..."`,
+  description: `"Post description ... (remember to end with a dot)"`,
 };
 
 console.log("Generating a new post template ...");
