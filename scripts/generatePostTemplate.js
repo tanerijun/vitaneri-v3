@@ -29,7 +29,7 @@ for (const [key, value] of Object.entries(frontmatter)) {
 }
 writeStream.write("---\n");
 writeStream.write("\n");
-writeStream.write("<!-- Introductions -->\n");
+writeStream.write("{/* Replace with introductions */}\n");
 writeStream.write("\n");
 writeStream.write("## Table Of Contents");
 writeStream.end();
