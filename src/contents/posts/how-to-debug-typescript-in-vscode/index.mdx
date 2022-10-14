@@ -24,6 +24,38 @@ First, you have to install these dependencies (I prefer installing them as dev d
 npm install --save-dev typescript ts-node tsconfig-paths
 ```
 
+## Generate Source Map
+
+Create a `tsconfig.json` file by running:
+
+```
+tsc --init
+```
+
+or create the file yourself.
+
+Then add `"sourceMap": true` to the `compilerOptions`.
+
+Your `tsconfig.json` file will now look something like this:
+
+```json
+{
+  "compilerOptions": {
+    "target": "ES3",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true
+  }
+}
+```
+
+By setting the `sourceMap` property to `true`. The TypeScript compiler will now also generate a `.map` file as well as a `.js` file for each of our TypeScript files.
+
+Node is a JavaScript runtime. It will only execute JavaScript code. The generated `.map` file tells VSCode how to map the executing JavaScript code back to our TypeScript source.
+
 ## Configure Debugger
 
 Next, go to the debug tab, and add a JSON configuration file named `launch.json` with these contents:
