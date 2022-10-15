@@ -21,7 +21,7 @@ console.log("Generating a new post template ...");
 
 fs.mkdirSync(`${BASE_URL}/${postSlug}/`);
 
-const writeStream = fs.createWriteStream(`${BASE_URL}/${postSlug}/index.md`);
+const writeStream = fs.createWriteStream(`${BASE_URL}/${postSlug}/index.mdx`);
 
 writeStream.write("---\n");
 for (const [key, value] of Object.entries(frontmatter)) {
