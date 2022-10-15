@@ -28,8 +28,8 @@ type PagePaths = {
 }[];
 
 export async function getStaticPaths() {
-  const posts = await Astro.glob<Frontmatter>(
-    "../../contents/posts/**/index.mdx"
+  const posts = await Astro.glob<MarkdownInstance<Frontmatter>>(
+    "../../contents/posts/**/index.{md,mdx}"
   );
 
   let postResult: PostResult = posts.map((post) => {
@@ -53,8 +53,8 @@ export async function getStaticPaths() {
 const { slug } = Astro.params;
 const { post } = Astro.props;
 
-const posts = await Astro.glob<Frontmatter>(
-  "../../contents/posts/**/index.mdx"
+const posts = await Astro.glob<MarkdownInstance<Frontmatter>>(
+  "../../contents/posts/**/index.{md,mdx}"
 );
 
 const sortedPosts = getSortedPosts(posts);

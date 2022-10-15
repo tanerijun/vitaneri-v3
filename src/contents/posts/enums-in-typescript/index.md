@@ -52,7 +52,7 @@ The function logs the actual value of the `state` parameter to the console then 
 
 Let's run the function with the following code.
 
-```ts
+```ts showLineNumbers
 checkModalState(ModalState.Open);
 checkModalState(ModalState.Closed);
 ```
@@ -142,7 +142,7 @@ String enum is particularly useful when we're debugging. Unlike the runtime valu
 
 When requirements are tight, and our code has to be as minimal as possible, we can use the const enums by adding the `const` keyword before the enum definition.
 
-```ts
+```ts {1}
 const enum ModalState {
   Open,
   Closed,
@@ -153,7 +153,7 @@ Const enum is introduced for performance reasons. The enums are completely remov
 
 Before we look at how const enums are implemented in plain JavaScript, let's go back and take a look at the JavaScript implementation of normal enums.
 
-```ts
+```ts {1}
 enum ModalState {
   Open,
   Closed,
