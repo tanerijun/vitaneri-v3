@@ -4,8 +4,9 @@ import Posts from "@layouts/Posts.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import getPageNumbers from "@utils/getPageNumbers";
 import type { Frontmatter } from "src/types";
+import type { MarkdownInstance } from "astro";
 
-const posts = await Astro.glob<Frontmatter>(
+const posts = await Astro.glob<MarkdownInstance<Frontmatter>>(
   "../../contents/posts/**/index.{md,mdx}"
 );
 

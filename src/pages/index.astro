@@ -10,8 +10,9 @@ import getSortedPosts from "@utils/getSortedPosts";
 import socialIcons from "@assets/socialIcons";
 import slugify from "@utils/slugify";
 import type { Frontmatter } from "src/types";
+import type { MarkdownInstance } from "astro";
 
-const posts = await Astro.glob<Frontmatter>("../contents/posts/**/index.{md,mdx}");
+const posts = await Astro.glob<MarkdownInstance<Frontmatter>>("../contents/posts/**/index.{md,mdx}");
 
 const sortedPosts = getSortedPosts(posts);
 ---
