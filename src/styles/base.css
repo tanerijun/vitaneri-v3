@@ -14,6 +14,10 @@ pre[data-language] {
   padding: 1.5rem 0 !important;
 }
 
+.prose pre code {
+  color: #E0DEF4 !important;
+}
+
 @media only screen and (min-width: 768px) {
   html pre[data-language]:after {
     content: attr(data-language);
@@ -24,10 +28,6 @@ pre[data-language] {
     text-align: right;
     color: var(--tw-prose-captions);
   }
-}
-
-html.dark pre[data-language]:after {
-  color: var(--tw-prose-invert-captions);
 }
 
 pre > code {
@@ -62,33 +62,8 @@ html code .line.highlighted {
   border-left: 0.25rem solid rgb(255, 120, 200);
 }
 
-html.dark code .line.highlighted {
-  background: rgba(200, 200, 255, 0.1);
-}
-
 code .line.highlighted:before {
   margin-left: 0.75rem;
-}
-
-/* code blocks: light/dark mode styles */
-pre[data-theme="light"] {
-  background-color: ghostwhite;
-}
-
-html pre[data-theme="light"] {
-  display: block;
-}
-
-html pre[data-theme="dark"] {
-  display: none;
-}
-
-html.dark pre[data-theme="light"] {
-  display: none;
-}
-
-html.dark pre[data-theme="dark"] {
-  display: block;
 }
 
 @layer base {
