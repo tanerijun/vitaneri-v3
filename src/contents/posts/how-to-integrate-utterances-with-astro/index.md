@@ -116,7 +116,7 @@ With that, we're finished with the component. You can plug it wherever you want 
 
 Now let's take this a step further by having the Utterances theme match the site theme. This part really depends on how the theming system on your site works. A common approach is to persist theming information in local storage. I'm going to use that as an example here.
 
-```astro
+```astro {6, 14}
 <div id="utterances-container"></div>
 
 <script>
