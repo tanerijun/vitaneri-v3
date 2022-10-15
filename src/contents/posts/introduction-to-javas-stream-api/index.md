@@ -136,7 +136,10 @@ And now we'll demonstrate how to work with the data declaratively using the stre
 This is how we can do the same thing as we did above with the stream API.
 
 ```java
-List<Cat> femaleCats = cats.stream().filter(cat -> "F".equals(cat.getGender())).collect(Collectors.toList());
+List<Cat> femaleCats = cats
+                    .stream()
+                    .filter(cat -> "F".equals(cat.getGender()))
+                    .collect(Collectors.toList());
 ```
 
 So we start off by calling the `.stream()` method on the collection (`cats`), which returns a `Stream` with the collection as its source. Now we can start working using the stream API. We simply have to ask what we want from the collection.
@@ -182,7 +185,7 @@ Let's look at an example of using `.map()`.
 
 Say, We want to change the gender format of our cat from "M" and "F" to "Male" and "Female" respectively. We can use `.map()` to solve this problem.
 
-```java
+```java {3}
 List<Cat> newCats = cats
                 .stream()
                 .map(cat -> new Cat(
@@ -207,8 +210,11 @@ We already looked at how `.filter()` works before. It returns a new Stream that 
 
 Let's look at another example. Say that we want a new List of cats that are younger than 5.
 
-```java
-List<Cat> catYoungerThanFive = cats.stream().filter(cat -> cat.getAge() < 5).collect(Collectors.toList());
+```java {3}
+List<Cat> catYoungerThanFive = cats
+                        .stream()
+                        .filter(cat -> cat.getAge() < 5)
+                        .collect(Collectors.toList());
 ```
 
 And this is the result of printing `catYoungerThanFive`.
@@ -224,8 +230,11 @@ We can also sort the list using the `.sorted()` method. The method takes in a `C
 
 For example, if we want to sort the cats by their age.
 
-```java
-List<Cat> newCats = cats.stream().sorted(Comparator.comparing(Cat::getAge)).collect(Collectors.toList());
+```java {3}
+List<Cat> newCats = cats
+                .stream()
+                .sorted(Comparator.comparing(Cat::getAge))
+                .collect(Collectors.toList());
 ```
 
 And this is the result:
@@ -239,10 +248,11 @@ Cat{name='Coco', age=7, gender='F'}
 
 You can also reverse it by adding the `.reversed()` method like this:
 
-```java
+```java {3}
 List<Cat> newCats = cats
                 .stream()
-                .sorted(Comparator.comparing(Cat::getAge).reversed()).collect(Collectors.toList());
+                .sorted(Comparator.comparing(Cat::getAge).reversed())
+                .collect(Collectors.toList());
 ```
 
 And this is the result:
@@ -262,12 +272,20 @@ Note that the `.min()` and `.max()` methods return an Optional because there mig
 
 Say that we want to find the youngest and the oldest cat from our list. We can that using `.min()` and `.max()` like this:
 
-```java
-Optional<Cat> youngestCat = cats.stream().min(Comparator.comparing(Cat::getAge));
-System.out.println("Youngest cat: " + youngestCat.orElseThrow(CatNotFoundException::new));
+```java {3, 10}
+Optional<Cat> youngestCat = cats
+                    .stream()
+                    .min(Comparator.comparing(Cat::getAge));
+System.out.println(
+    "Youngest cat: " + youngestCat.orElseThrow(CatNotFoundException::new)
+);
 
-Optional<Cat> oldestCat = cats.stream().max(Comparator.comparing(Cat::getAge));
-System.out.println("Oldest cat: " + oldestCat.orElseThrow(CatNotFoundException::new));
+Optional<Cat> oldestCat = cats
+                    .stream()
+                    .max(Comparator.comparing(Cat::getAge));
+System.out.println(
+    "Oldest cat: " + oldestCat.orElseThrow(CatNotFoundException::new)
+);
 ```
 
 And this is the result:
@@ -283,23 +301,29 @@ These operations take a Predicate as a parameter just like `.filter()` and retur
 
 `.allMatch()` returns true only if all elements in the stream match the Predicate.
 
-```java
-boolean allOlderThanFive = cats.stream().allMatch(cat -> cat.getAge() > 5);
-System.out.println("allOlderThanFive = " + allOlderThanFive);    // returns false
+```java {3}
+boolean allOlderThanFive = cats
+                    .stream()
+                    .allMatch(cat -> cat.getAge() > 5);
+System.out.println("allOlderThanFive = " + allOlderThanFive); // returns false
 ```
 
 `.anyMatch()` returns true if any one of the elements in the stream matches the Predicate.
 
-```java
-boolean anyOlderThanFive = cats.stream().anyMatch(cat -> cat.getAge() > 5);
-System.out.println("anyOlderThanFive = " + anyOlderThanFive);    // returns true
+```java {3}
+boolean anyOlderThanFive = cats
+                    .stream()
+                    .anyMatch(cat -> cat.getAge() > 5);
+System.out.println("anyOlderThanFive = " + anyOlderThanFive); // returns true
 ```
 
 `.noneMatch()` returns true if none of the elements match the Predicate.
 
-```java
-boolean noneOlderThanFive = cats.stream().noneMatch(cat -> cat.getAge() > 5);
-System.out.println("noneOlderThanFive = " + noneOlderThanFive);    // returns false
+```java {3}
+boolean noneOlderThanFive = cats
+                    .stream()
+                    .noneMatch(cat -> cat.getAge() > 5);
+System.out.println("noneOlderThanFive = " + noneOlderThanFive); // returns false
 ```
 
 ### collect
@@ -312,8 +336,10 @@ Let's look at an example of collecting into a map.
 
 Say that I want to group my cats based on their gender. We can do it like this:
 
-```java
-Map<String, List<Cat>> catMap = cats.stream().collect(Collectors.groupingBy(Cat::getGender));
+```java {3}
+Map<String, List<Cat>> catMap = cats
+                    .stream()
+                    .collect(Collectors.groupingBy(Cat::getGender));
 ```
 
 Now, if we print the map like this:

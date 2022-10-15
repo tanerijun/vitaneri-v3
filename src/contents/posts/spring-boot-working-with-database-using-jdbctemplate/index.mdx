@@ -20,7 +20,7 @@ In this tutorial, we'll learn how to connect a Spring Boot application with a re
 
 In the Java world, the tool that's used to integrate a database with the language is called Java Database Connectivity (JDBC). JDBC allows you to connect to a DBMS to work with databases. However, JDBC is very verbose, you have to write a lengthy block of code just to execute a simple SQL query, which is not very comfortable to use. Here is an example:
 
-````java
+```java
 String sql = "INSERT INTO student VALUES (?,?)";
 try (PreparedStatement st = con.prepareStatement(sql)) {
     st.setString(1, name);
@@ -38,9 +38,10 @@ Spring's JDBCTemplate comes to the rescue. JDBCTemplate reduces the verbosity of
 In this tutorial, we'll be creating a backend service that exposes 3 endpoints: adding a record to the database, removing a record from the database, and showing all the records in the database.
 
 We'll be working with a PostgreSQL database. Inside, there'll be a table called _student_ with 3 columns.
-  1. id -- An auto-incrementing integer.
-  2. name -- The name of the student.
-  3. age -- The age of the student.
+
+1. id -- An auto-incrementing integer.
+2. name -- The name of the student.
+3. age -- The age of the student.
 
 _Note: the examples in this tutorial will work with any relational database technology you choose with some minor adjustments. I also assume that you have some basic knowledge of Java, Spring Boot, JDBC, and SQL._
 
@@ -62,7 +63,7 @@ First, let's use [Spring Initializr](https://start.spring.io/) to generate the b
     <artifactId>postgresql</artifactId>
     <scope>runtime</scope>
 </dependency>
-````
+```
 
 The last dependency is the JDBC Driver for your chosen database, which is PostgreSQL in this case. Also, the reason we add `<scope>runtime</scope>` is because the app only needs the JDBC driver at runtime, it's not needed for compilation.
 
