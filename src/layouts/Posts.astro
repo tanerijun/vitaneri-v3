@@ -41,6 +41,7 @@ const next = pageNum < totalPages ? "" : "disabled";
       tabindex={prev === "disabled" ? "-1" : "0"}
       href={`/posts${pageNum - 1 !== 1 ? "/" + (pageNum - 1) : ""}`}
       className={`mr-4 select-none ${prev}`}
+      target={"self"}
     >
       <svg xmlns="http://www.w3.org/2000/svg" class={`${prev}-svg`}>
         <path
@@ -53,6 +54,7 @@ const next = pageNum < totalPages ? "" : "disabled";
       tabindex={next === "disabled" ? "-1" : "0"}
       href={`/posts/${pageNum + 1}`}
       className={`ml-4 select-none ${next}`}
+      target={"self"}
     >
       Next
       <svg xmlns="http://www.w3.org/2000/svg" class={`${next}-svg`}>
