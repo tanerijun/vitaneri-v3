@@ -1,17 +1,3 @@
-# Branch - rehypePrettyCode
-
-This is an example of how you can install the rehypePrettyCode plugin, and customize your code block.
-
-What works:
-
-1. Line number
-2. Language on bottom right of code block
-3. Line highlight (Only for md, not working for mdx. Require further investigation)
-
-Bug:
-
-1. Text for code fence without language will be unreadable on light mode (The workaround is by adding txt after codefence. Require further investigation)
-
 ## Vitaneri-V3
 
 The third version of my personal website.
@@ -52,3 +38,7 @@ To install locally, you can:
    ```
 6. Delete the generated `## Table Of Contents` if you don't need TOC.
 7. The highest headers in your article should be `##`. Single `#` is reserved for the post title.
+
+## TODO
+
+Line highlight works only for md files. It's not working for mdx files. This require further investigation.
