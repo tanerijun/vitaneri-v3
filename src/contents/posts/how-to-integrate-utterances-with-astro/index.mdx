@@ -122,7 +122,7 @@ Now let's take this a step further by having the Utterances theme match the site
 <script>
   const script = document.createElement("script");
   const container = document.querySelector("#utterances-container");
-  const currentTheme = localStorage.getItem("theme"); // get theme information
+  const currentTheme = localStorage.getItem("theme");
 
   // Set configurations
   Object.entries({
@@ -130,7 +130,7 @@ Now let's take this a step further by having the Utterances theme match the site
     repo: "tanerijun/vitaneri-v3",
     "issue-term": "pathname",
     label: "post comments",
-    theme: currentTheme == "light" ? "github-light" : "github-dark", // dynamic theme based on site theme
+    theme: currentTheme == "light" ? "github-light" : "github-dark",
     crossorigin: "anonymous",
   }).forEach(([key, value]) => {
     script.setAttribute(key, value);
