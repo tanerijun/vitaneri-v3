@@ -38,7 +38,3 @@ To install locally, you can:
    ```
 6. Delete the generated `## Table Of Contents` if you don't need TOC.
 7. The highest headers in your article should be `##`. Single `#` is reserved for the post title.
-
-## TODO
-
-Line highlight works only for md files. It's not working for mdx files. This require further investigation.

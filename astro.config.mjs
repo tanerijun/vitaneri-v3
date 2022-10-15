@@ -37,7 +37,9 @@ export default defineConfig({
     }),
     react(),
     sitemap(),
-    mdx(),
+    mdx({
+      rehypePlugins: [[rehypePrettyCode, rehypePrettyCodeOptions]],
+    }),
   ],
   markdown: {
     remarkPlugins: [
