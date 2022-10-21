@@ -63,7 +63,7 @@ function twoSum(nums: number[], target: number): number[] {
     }
   }
 
-  throw new Error("No answer!");
+  return [];
 }
 ```
 
@@ -77,13 +77,15 @@ function twoSum(nums: number[], target: number): number[] {
 
   for (let i = 0; i < nums.length; i++) {
     const complement = target - nums[i];
-    if (map.get(complement) !== undefined) {
-      return [map.get(complement), i];
+
+    const complementIndex = map.get(complement);
+    if (complementIndex !== undefined) {
+      return [complementIndex, i];
     }
     map.set(nums[i], i);
   }
 
-  throw new Error("No answer!");
+  return [];
 }
 ```
 
@@ -95,4 +97,4 @@ As for space complexity, it's also `O(n)`. In the worst case, the algorithm will
 
 That's it for Two Sum with TypeScript. :tada:
 
-Any question or suggestion is always welcomed. :blush:
+You can also find the code on my [Github](https://github.com/tanerijun/ts-leetcode).
