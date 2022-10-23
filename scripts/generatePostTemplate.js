@@ -12,7 +12,7 @@ const frontmatter = {
   slug: postSlug,
   featured: "false",
   draft: "false",
-  tags: "\n\t-",
+  tags: "\n  -",
   ogImage: "",
   description: `"Post description ... (remember to end with a dot)"`,
 };
