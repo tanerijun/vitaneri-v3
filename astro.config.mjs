@@ -37,10 +37,7 @@ export default defineConfig({
     }),
     react(),
     sitemap(),
-    mdx({
-      remarkPlugins: [remarkGemoji, remarkToc],
-      rehypePlugins: [[rehypePrettyCode, rehypePrettyCodeOptions]],
-    }),
+    mdx(),
   ],
   markdown: {
     remarkPlugins: [
