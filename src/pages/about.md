@@ -22,7 +22,7 @@ These are the skills and techs I'm most confident with:
 | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | **_Languages_**             | English, Chinese, Indonesian (All fluent)                                                                                     |
 | **_Programming Languages_** | JavaScript, TypeScript, Java, Python, Go                                                                                      |
-| **_Frontend_**              | HTML, CSS, Tailwind CSS, Styled Component, Chakra UI, Material UI, Mantine UI, JQuery, React/Next, Svelte/Sveltekit, Astro... |
+| **_Frontend_**              | HTML, CSS, Tailwind CSS, Styled Component, Chakra UI, Material UI, Mantine UI, JQuery, React/Next, Svelte/SvelteKit, Astro... |
 | **_Backend_**               | NodeJS, Express, Spring / Spring Boot, MongoDB, MySQL, PostgreSQL, Firebase, REST, GraphQL, ...                               |
 
 ## Hobbies
