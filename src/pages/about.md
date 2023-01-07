@@ -34,10 +34,10 @@ Life couldn't be all about working or learning. Like everyone else, I've my hobb
 - Waching movies (Mostly Anime)
 - Playing video games
 - Cycling, running, weight-lifting
-- Hunting for great stories (I really love those movies or books with life-changing story :relaxed:)
+- Hunting for great stories (I really love those movies or books with life-changing story ☺️)
 
 ## About Vitaneri
 
 Vitaneri is a [personal blog](/posts/) focused on documenting my knowledge as I grow as a software developer. Not only that, Vitaneri also serves as a porfolio for my [side projects](/projects/).
 
-There is no external ads or sponsored content on Vitaneri. There is also no Google Analytics or any form of data collection. I respect your privacy :wink:.
+There is no external ads or sponsored content on Vitaneri. There is also no Google Analytics or any form of data collection. I respect your privacy 😉.
