@@ -48,11 +48,11 @@ Let's see what's going on with the component. On render, we first check if there
 
 In short, it's just a simple component with input that take in your name and display it on the screen.
 
-As you know, reading from local storage is an IO operation, and it can potentially slow our application.
+As you know, reading from local storage is an IO operation, and it can potentially slow down our application.
 
-In the example above, the `useState` hook read the value from local storage every time it re-renders.
+In the example above, the `useState` hook read the value from local storage every time it re-renders. In this case, every time you type with the input box.
 
-Is there a way we can optimize this? This is where **lazy initialization** come in to play.
+Is there a way to optimize this? Yes! This is where **lazy initialization** come in to play.
 
 ```jsx {3}
 function NameForm = () => {
