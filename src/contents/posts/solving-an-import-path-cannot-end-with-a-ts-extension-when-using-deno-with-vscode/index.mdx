@@ -17,7 +17,7 @@ import DenoInitializeImg from "./images/denoinitialize.png";
 
 When we are working with Deno, we often need to import files with .ts extension. But the built-in TS language server from VSCode is usually unhappy when we do this.
 
-<image src={TSErrorImg} alt="Error message when importing a .ts file" />
+<img src={TSErrorImg} alt="Error message when importing a .ts file" />
 
 _An import path cannot end with a '.ts' extension._
 
@@ -25,7 +25,7 @@ To solve this issue, we need to install the [official Deno extension for VSCode]
 
 After installing the extension, simply open up your command palette (`ctrl` + `shift` + `p`), and type `deno: initialize`.
 
-<image src={DenoInitializeImg} alt="Deno initialize" />
+<img src={DenoInitializeImg} alt="Deno initialize" />
 
 This will create a `.vscode` folder in your workspace with a file called `settings.json` inside. The file will look something like this:
 
