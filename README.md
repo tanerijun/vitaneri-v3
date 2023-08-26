@@ -1,6 +1,6 @@
 ## Vitaneri-V3
 
-The third version of my personal website.
+The third version of my personal website (now archived).
 
 This time, it's created with Astro, and some of the components are written in React.
 
